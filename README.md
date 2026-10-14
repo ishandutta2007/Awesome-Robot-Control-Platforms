@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License: MIT" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Robot-Control-Platforms/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Robot-Control-Platforms?style=flat-square&logo=github&color=gold" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Robot-Control-Platforms/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Robot-Control-Platforms?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Robot-Control-Platforms/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Robot-Control-Platforms?style=flat-square&color=blue" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Robot-Control-Platforms/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Robot-Control-Platforms"><img src="https://img.shields.io/badge/Maintained%3F-yes-emerald.svg?style=flat-square" alt="Maintenance" /></a>
@@ -75,78 +75,78 @@ The table below lists the premier enterprise robot control platforms and offline
 
 Curated collection of open-source frameworks, motion generation algorithms, EtherCAT masters, soft-PLCs, and vendor-agnostic hardware abstraction libraries.
 
-> **Note:** The repositories below are **strictly ranked in descending order by GitHub star count**. Each badge displays live stars with `style=social` and links directly to the project's stargazers.
+> **Note:** The repositories below are **strictly ranked in descending order by GitHub Stars_Count**. Each badge displays live stars with `style=social` and links directly to the project's stargazers.
 
 ### 📦 High-Performance Frameworks & Libraries
 
-1. **[LeRobot](https://github.com/huggingface/lerobot)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/lerobot?style=social&color=white)](https://github.com/huggingface/lerobot/stargazers)  
+1. **[LeRobot](https://github.com/huggingface/lerobot)** [![GitHub_Stars](https://img.shields.io/github/stars/huggingface/lerobot?style=social&color=white)](https://github.com/huggingface/lerobot/stargazers)  
    *Hugging Face's cutting-edge framework for real-world robotics in PyTorch.* Provides state-of-the-art imitation learning algorithms (ACT, Diffusion Policy), low-cost manipulator teleoperation pipelines, real-time control loops, and direct dataset sharing on Hugging Face Hub.
 
-2. **[Drake](https://github.com/RobotLocomotion/drake)** [![GitHub stars](https://img.shields.io/github/stars/RobotLocomotion/drake?style=social&color=white)](https://github.com/RobotLocomotion/drake/stargazers)  
+2. **[Drake](https://github.com/RobotLocomotion/drake)** [![GitHub_Stars](https://img.shields.io/github/stars/RobotLocomotion/drake?style=social&color=white)](https://github.com/RobotLocomotion/drake/stargazers)  
    *Model-based design and verification toolbox for robotics by MIT CSAIL and TRI.* Features blazingly fast multibody kinematics, trajectory optimization (Direct Collocation, SNOPT), real-time simulation, inverse dynamics, and convex quadratic programming controllers.
 
-3. **[Pinocchio](https://github.com/stack-of-tasks/pinocchio)** [![GitHub stars](https://img.shields.io/github/stars/stack-of-tasks/pinocchio?style=social&color=white)](https://github.com/stack-of-tasks/pinocchio/stargazers)  
+3. **[Pinocchio](https://github.com/stack-of-tasks/pinocchio)** [![GitHub_Stars](https://img.shields.io/github/stars/stack-of-tasks/pinocchio?style=social&color=white)](https://github.com/stack-of-tasks/pinocchio/stargazers)  
    *Ultra-fast, rigid body dynamics library written in C++ using Eigen and spatial algebra.* Computes forward/inverse kinematics, analytical derivatives of spatial algorithms, and the Articulated Body Algorithm (ABA) at microsecond speeds for model-predictive control (MPC).
 
-4. **[SOEM (Simple Open EtherCAT Master)](https://github.com/OpenEtherCATsociety/SOEM)** [![GitHub stars](https://img.shields.io/github/stars/OpenEtherCATsociety/SOEM?style=social&color=white)](https://github.com/OpenEtherCATsociety/SOEM/stargazers)  
+4. **[SOEM (Simple Open EtherCAT Master)](https://github.com/OpenEtherCATsociety/SOEM)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenEtherCATsociety/SOEM?style=social&color=white)](https://github.com/OpenEtherCATsociety/SOEM/stargazers)  
    *Lightweight, open-source EtherCAT master written in clean ANSI C.* Designed for embedded systems, microcontrollers, and real-time OSs (RT-Linux, Xenomai, FreeRTOS). Enables microsecond cyclic synchronous position (CSP) and velocity (CSV) drive control across CiA402 slaves.
 
-5. **[MoveIt 2](https://github.com/moveit/moveit2)** [![GitHub stars](https://img.shields.io/github/stars/moveit/moveit2?style=social&color=white)](https://github.com/moveit/moveit2/stargazers)  
+5. **[MoveIt 2](https://github.com/moveit/moveit2)** [![GitHub_Stars](https://img.shields.io/github/stars/moveit/moveit2?style=social&color=white)](https://github.com/moveit/moveit2/stargazers)  
    *The premier motion planning and kinematic manipulation framework for ROS 2.* Delivers real-time Cartesian jogging, trajectory execution monitoring, collision-aware inverse kinematics (OMPL, CHOMP, STOMP), and seamless integration with `ros2_control`.
 
-6. **[OpenPLC v3](https://github.com/thiagoralves/OpenPLC_v3)** [![GitHub stars](https://img.shields.io/github/stars/thiagoralves/OpenPLC_v3?style=social&color=white)](https://github.com/thiagoralves/OpenPLC_v3/stargazers)  
+6. **[OpenPLC v3](https://github.com/thiagoralves/OpenPLC_v3)** [![GitHub_Stars](https://img.shields.io/github/stars/thiagoralves/OpenPLC_v3?style=social&color=white)](https://github.com/thiagoralves/OpenPLC_v3/stargazers)  
    *Fully functional, open-source Programmable Logic Controller (PLC) suite conforming to IEC 61131-3.* Supports Ladder Logic (LD), Structured Text (ST), and Instruction List (IL). Can be paired with real-time motion generation to control multi-axis robotic machines.
 
-7. **[Ruckig](https://github.com/pantor/ruckig)** [![GitHub stars](https://img.shields.io/github/stars/pantor/ruckig?style=social&color=white)](https://github.com/pantor/ruckig/stargazers)  
+7. **[Ruckig](https://github.com/pantor/ruckig)** [![GitHub_Stars](https://img.shields.io/github/stars/pantor/ruckig?style=social&color=white)](https://github.com/pantor/ruckig/stargazers)  
    *Real-time, third-order (jerk-limited) and fourth-order trajectory generation for arbitrary initial states.* Computes time-optimal, kinematic-constrained trajectories instantaneously at 1 kHz+ loops. Widely deployed across industrial robots, autonomous vehicles, and CNC gantries.
 
-8. **[Crocoddyl](https://github.com/loco-3d/crocoddyl)** [![GitHub stars](https://img.shields.io/github/stars/loco-3d/crocoddyl?style=social&color=white)](https://github.com/loco-3d/crocoddyl/stargazers)  
+8. **[Crocoddyl](https://github.com/loco-3d/crocoddyl)** [![GitHub_Stars](https://img.shields.io/github/stars/loco-3d/crocoddyl?style=social&color=white)](https://github.com/loco-3d/crocoddyl/stargazers)  
    *High-performance optimal control and contact dynamics framework for multi-body systems.* Leverages Differential Dynamic Programming (DDP) and analytical derivatives from Pinocchio to compute whole-body motion control for quadrupeds and humanoid robots in milliseconds.
 
-9. **[ros2_control](https://github.com/ros-controls/ros2_control)** [![GitHub stars](https://img.shields.io/github/stars/ros-controls/ros2_control?style=social&color=white)](https://github.com/ros-controls/ros2_control/stargazers)  
+9. **[ros2_control](https://github.com/ros-controls/ros2_control)** [![GitHub_Stars](https://img.shields.io/github/stars/ros-controls/ros2_control?style=social&color=white)](https://github.com/ros-controls/ros2_control/stargazers)  
    *The definitive open-source architecture for real-time robot control in ROS 2.* Offers deterministic hardware abstraction (`hardware_interface`), modular controller life-cycle management, real-time command resource locking, and out-of-the-box support for manipulators and mobile bases.
 
-10. **[ros2_controllers](https://github.com/ros-controls/ros2_controllers)** [![GitHub stars](https://img.shields.io/github/stars/ros-controls/ros2_controllers?style=social&color=white)](https://github.com/ros-controls/ros2_controllers/stargazers)  
+10. **[ros2_controllers](https://github.com/ros-controls/ros2_controllers)** [![GitHub_Stars](https://img.shields.io/github/stars/ros-controls/ros2_controllers?style=social&color=white)](https://github.com/ros-controls/ros2_controllers/stargazers)  
     *Standard real-time controller implementations for ros2_control.* Includes the Joint Trajectory Controller (spline interpolation, tolerance checking), Forward Command Controller, Diff Drive Controller, Gripper Action Controller, and Admittance / Impedance controllers.
 
-11. **[Universal Robots ROS 2 Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver)** [![GitHub stars](https://img.shields.io/github/stars/UniversalRobots/Universal_Robots_ROS2_Driver?style=social&color=white)](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/stargazers)  
+11. **[Universal Robots ROS 2 Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver)** [![GitHub_Stars](https://img.shields.io/github/stars/UniversalRobots/Universal_Robots_ROS2_Driver?style=social&color=white)](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/stargazers)  
     *Official industrial-grade ROS 2 driver for Universal Robots (CB3 & e-Series).* Provides 500 Hz deterministic trajectory execution over RTDE, speed-scaling feedback, URCap dashboard remote controller control, and full compatibility with `ros2_control`.
 
-12. **[generate_parameter_library](https://github.com/PickNikRobotics/generate_parameter_library)** [![GitHub stars](https://img.shields.io/github/stars/PickNikRobotics/generate_parameter_library?style=social&color=white)](https://github.com/PickNikRobotics/generate_parameter_library/stargazers)  
+12. **[generate_parameter_library](https://github.com/PickNikRobotics/generate_parameter_library)** [![GitHub_Stars](https://img.shields.io/github/stars/PickNikRobotics/generate_parameter_library?style=social&color=white)](https://github.com/PickNikRobotics/generate_parameter_library/stargazers)  
     *Declarative C++ parameter generation library for ROS 2.* Generates compile-time validated structs from YAML definitions with type safety, dynamic reconfiguration, and automatic validation bounds — essential for configuring complex robot controller stacks.
 
 ---
 
 ### 🔌 Industrial Drivers, Simulators & Extended Middleware
 
-13. **[RoboDK API](https://github.com/RoboDK/RoboDK-API)** [![GitHub stars](https://img.shields.io/github/stars/RoboDK/RoboDK-API?style=social&color=white)](https://github.com/RoboDK/RoboDK-API/stargazers)  
+13. **[RoboDK API](https://github.com/RoboDK/RoboDK-API)** [![GitHub_Stars](https://img.shields.io/github/stars/RoboDK/RoboDK-API?style=social&color=white)](https://github.com/RoboDK/RoboDK-API/stargazers)  
     *Universal multi-language API (Python, C#, C++, MATLAB) for industrial offline programming.* Bridges CAD/CAM pathways with simulation and generates brand-specific robot programs for 50+ vendors including FANUC, KUKA, ABB, and Yaskawa.
 
-14. **[mujoco_ros2_control](https://github.com/ros-controls/mujoco_ros2_control)** [![GitHub stars](https://img.shields.io/github/stars/ros-controls/mujoco_ros2_control?style=social&color=white)](https://github.com/ros-controls/mujoco_ros2_control/stargazers)  
+14. **[mujoco_ros2_control](https://github.com/ros-controls/mujoco_ros2_control)** [![GitHub_Stars](https://img.shields.io/github/stars/ros-controls/mujoco_ros2_control?style=social&color=white)](https://github.com/ros-controls/mujoco_ros2_control/stargazers)  
     *MuJoCo physics engine hardware interface for ros2_control.* Provides ultra-fast, contact-rich physical simulation with minimal computational overhead, enabling rapid testing of joint trajectory controllers before physical deployment.
 
-15. **[gz_ros2_control](https://github.com/ros-controls/gz_ros2_control)** [![GitHub stars](https://img.shields.io/github/stars/ros-controls/gz_ros2_control?style=social&color=white)](https://github.com/ros-controls/gz_ros2_control/stargazers)  
+15. **[gz_ros2_control](https://github.com/ros-controls/gz_ros2_control)** [![GitHub_Stars](https://img.shields.io/github/stars/ros-controls/gz_ros2_control?style=social&color=white)](https://github.com/ros-controls/gz_ros2_control/stargazers)  
     *Gazebo Sim (modern Ignition) hardware plugin bridge for ros2_control.* Connects simulated joints, sensors, and actuators inside Gazebo with the exact same controller code used on physical robot hardware.
 
-16. **[teleop_tools](https://github.com/ros-teleop/teleop_tools)** [![GitHub stars](https://img.shields.io/github/stars/ros-teleop/teleop_tools?style=social&color=white)](https://github.com/ros-teleop/teleop_tools/stargazers)  
+16. **[teleop_tools](https://github.com/ros-teleop/teleop_tools)** [![GitHub_Stars](https://img.shields.io/github/stars/ros-teleop/teleop_tools?style=social&color=white)](https://github.com/ros-teleop/teleop_tools/stargazers)  
     *A collection of universal ROS / ROS 2 nodes for joystick, keyboard, and mouse teleoperation.* Facilitates direct teleoperation input mapping to velocity topics and robot control actuators.
 
-17. **[ROS-Industrial Core](https://github.com/ros-industrial/industrial_core)** [![GitHub stars](https://img.shields.io/github/stars/ros-industrial/industrial_core?style=social&color=white)](https://github.com/ros-industrial/industrial_core/stargazers)  
+17. **[ROS-Industrial Core](https://github.com/ros-industrial/industrial_core)** [![GitHub_Stars](https://img.shields.io/github/stars/ros-industrial/industrial_core?style=social&color=white)](https://github.com/ros-industrial/industrial_core/stargazers)  
     *Core communication packages and libraries for ROS-Industrial.* Establishes standard client-server protocols for industrial robot controllers, socket messaging, and standard trajectory streaming without vendor-specific dialect lock-in.
 
-18. **[CANOpenRobotController (CORC)](https://github.com/UniMelbHumanRoboticsLab/CANOpenRobotController)** [![GitHub stars](https://img.shields.io/github/stars/UniMelbHumanRoboticsLab/CANOpenRobotController?style=social&color=white)](https://github.com/UniMelbHumanRoboticsLab/CANOpenRobotController/stargazers)  
+18. **[CANOpenRobotController (CORC)](https://github.com/UniMelbHumanRoboticsLab/CANOpenRobotController)** [![GitHub_Stars](https://img.shields.io/github/stars/UniMelbHumanRoboticsLab/CANOpenRobotController?style=social&color=white)](https://github.com/UniMelbHumanRoboticsLab/CANOpenRobotController/stargazers)  
     *Real-time C++ robot development stack with native EtherCAT & CANopen support.* Developed by the Melbourne Human Robotics Lab for hardware abstraction and real-time multi-joint control of exoskeletons, rehabilitation robots, and manipulators.
 
-19. **[MotorBridge](https://github.com/motorbridge/motorbridge)** [![GitHub stars](https://img.shields.io/github/stars/motorbridge/motorbridge?style=social&color=white)](https://github.com/motorbridge/motorbridge/stargazers)  
+19. **[MotorBridge](https://github.com/motorbridge/motorbridge)** [![GitHub_Stars](https://img.shields.io/github/stars/motorbridge/motorbridge?style=social&color=white)](https://github.com/motorbridge/motorbridge/stargazers)  
     *Vendor-agnostic CAN bus actuator control library for robotic joints.* Provides a unified API across Damiao, RobStride, MyActuator, HighTorque, and Hexfellow motors. High-performance Rust core with C++, Python, and ROS 2 bindings without GC latency spikes.
 
-20. **[Beremiz](https://github.com/beremiz/beremiz_public_dist)** [![GitHub stars](https://img.shields.io/github/stars/beremiz/beremiz_public_dist?style=social&color=white)](https://github.com/beremiz/beremiz_public_dist/stargazers)  
+20. **[Beremiz](https://github.com/beremiz/beremiz_public_dist)** [![GitHub_Stars](https://img.shields.io/github/stars/beremiz/beremiz_public_dist?style=social&color=white)](https://github.com/beremiz/beremiz_public_dist/stargazers)  
     *Open-source automation development environment conforming to IEC 61131-3.* Integrates SoftMotion libraries for CiA402 servo drives and EtherCAT master communication (IgH EtherCAT Master), serving as an open alternative to proprietary PLC suites.
 
-21. **[Movensys WMX R2](https://github.com/movensys/wmx-r2)** [![GitHub stars](https://img.shields.io/github/stars/movensys/wmx-r2?style=social&color=white)](https://github.com/movensys/wmx-r2/stargazers)  
+21. **[Movensys WMX R2](https://github.com/movensys/wmx-r2)** [![GitHub_Stars](https://img.shields.io/github/stars/movensys/wmx-r2?style=social&color=white)](https://github.com/movensys/wmx-r2/stargazers)  
     *ROS 2 interface for WMX3, a real-time software-based EtherCAT motion control SDK.* Bridges WMX3 C++ APIs into standard ROS 2 nodes, topics, services, and actions, allowing MoveIt 2 and Nav2 to drive any EtherCAT multi-axis gantry or arm.
 
-22. **[SAINT.OS](https://github.com/input-inc/saintos)** [![GitHub stars](https://img.shields.io/github/stars/input-inc/saintos?style=social&color=white)](https://github.com/input-inc/saintos/stargazers)  
+22. **[SAINT.OS](https://github.com/input-inc/saintos)** [![GitHub_Stars](https://img.shields.io/github/stars/input-inc/saintos?style=social&color=white)](https://github.com/input-inc/saintos/stargazers)  
     *Modular ROS 2 control platform for multi-node animatronic and mobile robotic systems.* A central coordinator orchestrates microcontroller nodes over ROS 2 with web-based UI, WebSocket APIs, actuator routing sheets, and over-the-air (OTA) updates.
 
 #### 🌐 Additional Specialized Tools & Drivers
@@ -210,7 +210,7 @@ We welcome additions, corrections, and updates from robotics engineers and contr
 3. 📝 **Add your project** in the appropriate section:
    - Ensure alphabetical or star-count sorting is preserved.
    - For SaaS: include company size, specific starting tier price, and specific free trial/tier limits.
-   - For Open-Source: add the standard shields.io social star badge linking to the stargazers page.
+   - For Open-Source: add the standard shields.io social Stars_Badge linking to the stargazers page.
 4. 🚀 **Submit a Pull Request** with a concise description of why the tool is valuable to the robot control ecosystem.
 
 > [!TIP]
