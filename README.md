@@ -2,7 +2,7 @@
 
 # Awesome-Robot-Control-Platforms
 
-# Top Robot Control Platforms Ecosystem
+## Top Robot Control Platforms Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Real-Time Motion Control, Hardware Abstraction & PLC-Robot Integration*  
