@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#0a1228" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient with Animation -->
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4">
+        <animate attributeName="stop-color" values="#06b6d4;#3b82f6;#8b5cf6;#ec4899;#06b6d4" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#3b82f6">
+        <animate attributeName="stop-color" values="#3b82f6;#8b5cf6;#ec4899;#06b6d4;#3b82f6" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#8b5cf6">
+        <animate attributeName="stop-color" values="#8b5cf6;#ec4899;#06b6d4;#3b82f6;#8b5cf6" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Luminous Beam Gradient -->
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="slightGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Circuit Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.5" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.03); }
+      }
+      @keyframes floatArm {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-6px) rotate(1.5deg); }
+      }
+      @keyframes dataStream {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes scanBeam {
+        0% { transform: translateX(-600px); }
+        100% { transform: translateX(1200px); }
+      }
+      .circuit-flow {
+        stroke-dasharray: 20 40;
+        animation: dataStream 4s linear infinite;
+      }
+      .flow-reverse {
+        stroke-dasharray: 25 35;
+        animation: dataStream 5s linear infinite reverse;
+      }
+      .scanning-light {
+        animation: scanBeam 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .tech-title {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+      .tech-sub {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+      .badge-text {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="20" fill="url(#bgGrad)" />
+
+  <!-- Background Grid Pattern -->
+  <rect width="1200" height="420" rx="20" fill="url(#grid)" />
+
+  <!-- Dynamic Ambient Glow Blobs in Background -->
+  <circle cx="180" cy="120" r="160" fill="#0284c7" opacity="0.18" filter="url(#glow)">
+    <animate attributeName="cy" values="120;150;120" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.15;0.25;0.15" dur="7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1020" cy="280" r="180" fill="#7c3aed" opacity="0.16" filter="url(#glow)">
+    <animate attributeName="cx" values="1020;990;1020" dur="11s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.12;0.22;0.12" dur="8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Animated Data Streams (Circuit Lines behind text) -->
+  <g opacity="0.4" filter="url(#slightGlow)">
+    <!-- Circuit path 1 -->
+    <path d="M 0 100 L 250 100 L 320 170 L 480 170 L 520 130 L 780 130 L 840 70 L 1200 70" fill="none" stroke="#0ea5e9" stroke-width="2" class="circuit-flow" />
+    <!-- Circuit path 2 -->
+    <path d="M 0 320 L 220 320 L 280 260 L 550 260 L 610 320 L 890 320 L 960 250 L 1200 250" fill="none" stroke="#8b5cf6" stroke-width="2" class="flow-reverse" />
+    <!-- Circuit path 3 (Vertical branch) -->
+    <path d="M 320 0 L 320 170 L 370 220 L 370 420" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="10 25" class="circuit-flow" />
+    <!-- Circuit path 4 -->
+    <path d="M 880 420 L 880 320 L 940 260 L 940 0" fill="none" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="15 30" class="flow-reverse" />
+  </g>
+
+  <!-- Pulsing Bus Nodes (CAN/EtherCAT junction points) -->
+  <g>
+    <!-- Node 1 -->
+    <circle cx="250" cy="100" r="4" fill="#38bdf8">
+      <animate attributeName="r" values="3;7;3" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="250" cy="100" r="10" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="r" values="6;16;6" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="3s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Node 2 -->
+    <circle cx="960" cy="250" r="4" fill="#a855f7">
+      <animate attributeName="r" values="3;7;3" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="960" cy="250" r="10" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="r" values="6;16;6" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Node 3 -->
+    <circle cx="520" cy="130" r="3.5" fill="#06b6d4">
+      <animate attributeName="r" values="2.5;6;2.5" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Stylized Robotic Joint / Kinematic Arm Wireframe Illustration (Right side subtle graphic) -->
+  <g transform="translate(940, 150)" opacity="0.28">
+    <g style="animation: floatArm 6s ease-in-out infinite;">
+      <!-- Base Pedestal -->
+      <path d="M -50 160 L 50 160 L 35 130 L -35 130 Z" fill="#38bdf8" opacity="0.6" />
+      <!-- Link 1 -->
+      <line x1="0" y1="130" x2="0" y2="70" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" />
+      <circle cx="0" cy="70" r="16" fill="#0f172a" stroke="#0ea5e9" stroke-width="4" />
+      <!-- Link 2 -->
+      <line x1="0" y1="70" x2="70" y2="-10" stroke="#818cf8" stroke-width="7" stroke-linecap="round" />
+      <circle cx="70" cy="-10" r="13" fill="#0f172a" stroke="#8b5cf6" stroke-width="4" />
+      <!-- Link 3 -->
+      <line x1="70" y1="-10" x2="130" y2="-30" stroke="#c084fc" stroke-width="5" stroke-linecap="round" />
+      <circle cx="130" cy="-30" r="10" fill="#0f172a" stroke="#ec4899" stroke-width="3" />
+      <!-- End Effector Gripper -->
+      <path d="M 130 -30 L 155 -40 M 130 -30 L 155 -20" stroke="#f43f5e" stroke-width="3.5" stroke-linecap="round" />
+      <!-- Trajectory Arc -->
+      <path d="M -20 100 A 120 120 0 0 1 150 -50" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 6" />
+    </g>
+  </g>
+
+  <!-- Sweeping Scanning Light Beam across Border -->
+  <g class="scanning-light">
+    <rect x="0" y="0" width="300" height="420" fill="url(#beamGrad)" opacity="0.12" />
+  </g>
+
+  <!-- Foreground Content Card (Ensures 100% Text Legibility) -->
+  <rect x="50" y="45" width="1100" height="330" rx="16" fill="#0b1329" fill-opacity="0.75" stroke="url(#borderGlow)" stroke-width="1.8" filter="url(#slightGlow)" />
+
+  <!-- Robot Control Icon in Foreground -->
+  <g transform="translate(100, 82)">
+    <rect width="64" height="64" rx="14" fill="#0f172a" stroke="#0284c7" stroke-width="2" />
+    <!-- Stylized Microchip / Controller with Axes -->
+    <rect x="18" y="18" width="28" height="28" rx="6" fill="#0369a1" />
+    <path d="M 12 25 L 18 25 M 12 32 L 18 32 M 12 39 L 18 39" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 46 25 L 52 25 M 46 32 L 52 32 M 46 39 L 52 39" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 25 12 L 25 18 M 32 12 L 32 18 M 39 12 L 39 18" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 25 46 L 25 52 M 32 46 L 32 52 M 39 46 L 39 52" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="32" cy="32" r="6" fill="#ffffff" />
+    <circle cx="32" cy="32" r="3" fill="#0284c7" />
+  </g>
+
+  <!-- Title & Subtitle in Foreground -->
+  <text x="184" y="112" class="tech-title" font-size="34" fill="#ffffff">
+    AWESOME ROBOT CONTROL PLATFORMS
+  </text>
+  <text x="184" y="138" class="tech-sub" font-size="16" fill="#38bdf8" font-weight="600">
+    ⚡ Real-Time Motion Control • Hardware Abstraction • Industrial PLC &amp; ROS 2 Integration
+  </text>
+
+  <!-- Description paragraph in foreground -->
+  <text x="100" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#94a3b8" font-weight="400">
+    The ultimate curated ecosystem of enterprise SaaS suites and high-performance open-source frameworks.
+  </text>
+  <text x="100" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#94a3b8" font-weight="400">
+    Designed for robotics engineers, control systems developers, factory integrators, and researchers worldwide.
+  </text>
+
+  <!-- Foreground Category Feature Pills -->
+  <g transform="translate(100, 275)">
+    <!-- Pill 1: ROS 2 Control -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="38" rx="19" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
+      <circle cx="22" cy="19" r="6" fill="#0284c7" />
+      <text x="36" y="24" class="badge-text" fill="#f8fafc">🤖 ros2_control</text>
+    </g>
+
+    <!-- Pill 2: Real-Time Motion -->
+    <g transform="translate(196, 0)">
+      <rect width="195" height="38" rx="19" fill="#1e293b" stroke="#818cf8" stroke-width="1.2" />
+      <circle cx="22" cy="19" r="6" fill="#6366f1" />
+      <text x="36" y="24" class="badge-text" fill="#f8fafc">⚡ Motion Trajectories</text>
+    </g>
+
+    <!-- Pill 3: EtherCAT & CANopen -->
+    <g transform="translate(407, 0)">
+      <rect width="195" height="38" rx="19" fill="#1e293b" stroke="#a855f7" stroke-width="1.2" />
+      <circle cx="22" cy="19" r="6" fill="#9333ea" />
+      <text x="36" y="24" class="badge-text" fill="#f8fafc">🔄 EtherCAT &amp; CAN</text>
+    </g>
+
+    <!-- Pill 4: PLC & IEC 61131 -->
+    <g transform="translate(618, 0)">
+      <rect width="180" height="38" rx="19" fill="#1e293b" stroke="#ec4899" stroke-width="1.2" />
+      <circle cx="22" cy="19" r="6" fill="#db2777" />
+      <text x="36" y="24" class="badge-text" fill="#f8fafc">🏭 PLC Integrator</text>
+    </g>
+
+    <!-- Pill 5: Dynamics & MPC -->
+    <g transform="translate(814, 0)">
+      <rect width="186" height="38" rx="19" fill="#1e293b" stroke="#10b981" stroke-width="1.2" />
+      <circle cx="22" cy="19" r="6" fill="#059669" />
+      <text x="36" y="24" class="badge-text" fill="#f8fafc">🦾 Rigid Dynamics</text>
+    </g>
+  </g>
+
+  <!-- Subtle bottom glowing accent strip -->
+  <rect x="250" y="373" width="700" height="2" fill="url(#beamGrad)" />
+</svg>
